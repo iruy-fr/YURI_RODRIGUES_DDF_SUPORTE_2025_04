@@ -1,0 +1,9 @@
+Boa tarde, tudo bem?
+Recebi a sua solicitação, estamos analisando qual o motivo do seu erro, logo retornaremos com uma resposta.
+
+Verifiquei que no seu arquivo existem erros nas tabelas 'perfomanceRating',
+na linha 202 na coluna 'PerformanceRating' onde a informação é nula.
+Também verifiquei que na linha 205 existe um erro na coluna 'EmployeeNumber' em que a informação contida não é numeral,
+o que está gerando erro na importação das informações para a Dadosfera.
+Para a correção da linha 202 sugiro que seja verificado o valor correspondente à 'PerformanceRating' do funcionário 274.
+Para a correção da linha 205 sugiro que seja adicionado o valor 281 pois é o único funcionário dentro do intervalo que não está na tabela 'performanceRating'.

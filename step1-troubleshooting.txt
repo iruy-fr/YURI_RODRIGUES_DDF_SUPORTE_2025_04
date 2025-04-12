@@ -7,3 +7,5 @@ Também verifiquei que na linha 205 existe um erro na coluna 'EmployeeNumber' em
 o que está gerando erro na importação das informações para a Dadosfera.
 Para a correção da linha 202 sugiro que seja verificado o valor correspondente à 'PerformanceRating' do funcionário 274.
 Para a correção da linha 205 sugiro que seja adicionado o valor 281 pois é o único funcionário dentro do intervalo que não está na tabela 'performanceRating'.
+Qualquer outra dúvida ou erro pode entrar em contato que iremos verificar.
+Alguma outra dúvida?

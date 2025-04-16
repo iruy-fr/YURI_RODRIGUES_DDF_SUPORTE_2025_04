@@ -1,0 +1,89 @@
+---Gráfico de distribuição etária---
+SELECT
+  (
+    FLOOR(
+      (
+        (
+          "PUBLIC"."TB__65ZARU__PUBLIC__TB_YURI_RODRIGUES_SUPORTE"."AGE" - 15.0
+        ) / 7.5
+      )
+    ) * 7.5
+  ) + 15.0 AS "AGE",
+  COUNT(*) AS "count"
+FROM
+  "DADOSFERA_PRD_TREINAMENTOS"."PUBLIC"."TB__65ZARU__PUBLIC__TB_YURI_RODRIGUES_SUPORTE"
+GROUP BY
+  (
+    FLOOR(
+      (
+        (
+          "PUBLIC"."TB__65ZARU__PUBLIC__TB_YURI_RODRIGUES_SUPORTE"."AGE" - 15.0
+        ) / 7.5
+      )
+    ) * 7.5
+  ) + 15.0
+ORDER BY
+  (
+    FLOOR(
+      (
+        (
+          "PUBLIC"."TB__65ZARU__PUBLIC__TB_YURI_RODRIGUES_SUPORTE"."AGE" - 15.0
+        ) / 7.5
+      )
+    ) * 7.5
+  ) + 15.0 ASC
+
+  ---Média de anos na empresa por cargo---
+  SELECT
+  "PUBLIC"."TB__65ZARU__PUBLIC__TB_YURI_RODRIGUES_SUPORTE"."JOBROLE" AS "JOBROLE",
+  AVG(
+    FLOOR(
+      (
+        "PUBLIC"."TB__65ZARU__PUBLIC__TB_YURI_RODRIGUES_SUPORTE"."YEARSATCOMPANY" / 5.0
+      )
+    ) * 5.0
+  ) AS "avg"
+FROM
+  "DADOSFERA_PRD_TREINAMENTOS"."PUBLIC"."TB__65ZARU__PUBLIC__TB_YURI_RODRIGUES_SUPORTE"
+GROUP BY
+  "PUBLIC"."TB__65ZARU__PUBLIC__TB_YURI_RODRIGUES_SUPORTE"."JOBROLE"
+ORDER BY
+  "PUBLIC"."TB__65ZARU__PUBLIC__TB_YURI_RODRIGUES_SUPORTE"."JOBROLE" ASC
+
+  ---Nível de cargo por gênero---
+  SELECT
+  (
+    FLOOR(
+      (
+        (
+          "PUBLIC"."TB__65ZARU__PUBLIC__TB_YURI_RODRIGUES_SUPORTE"."JOBLEVEL" - 1.0
+        ) / 0.5
+      )
+    ) * 0.5
+  ) + 1.0 AS "JOBLEVEL",
+  "PUBLIC"."TB__65ZARU__PUBLIC__TB_YURI_RODRIGUES_SUPORTE"."GENDER" AS "GENDER",
+  COUNT(*) AS "count"
+FROM
+  "DADOSFERA_PRD_TREINAMENTOS"."PUBLIC"."TB__65ZARU__PUBLIC__TB_YURI_RODRIGUES_SUPORTE"
+GROUP BY
+  (
+    FLOOR(
+      (
+        (
+          "PUBLIC"."TB__65ZARU__PUBLIC__TB_YURI_RODRIGUES_SUPORTE"."JOBLEVEL" - 1.0
+        ) / 0.5
+      )
+    ) * 0.5
+  ) + 1.0,
+  "PUBLIC"."TB__65ZARU__PUBLIC__TB_YURI_RODRIGUES_SUPORTE"."GENDER"
+ORDER BY
+  (
+    FLOOR(
+      (
+        (
+          "PUBLIC"."TB__65ZARU__PUBLIC__TB_YURI_RODRIGUES_SUPORTE"."JOBLEVEL" - 1.0
+        ) / 0.5
+      )
+    ) * 0.5
+  ) + 1.0 ASC,
+  "PUBLIC"."TB__65ZARU__PUBLIC__TB_YURI_RODRIGUES_SUPORTE"."GENDER" ASC

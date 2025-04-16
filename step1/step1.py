@@ -2,7 +2,7 @@ import pandas
 import pandas as pd
 
 
-csv = pandas.read_csv('ibmEmployeeDomain - performanceRating.csv')
+csv = pandas.read_csv('../ibmEmployeeDomain - performanceRating.csv')
 
 #VERIFICANDO ERROS NA TABELA 'performanceRating' NA COLUNA 'EmployeeNumber'
 

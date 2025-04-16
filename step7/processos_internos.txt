@@ -1,0 +1,51 @@
+🧭Fase 1 – Planejamento Estratégico
+Objetivo: centralizar identidade e acesso, garantir segurança e escalabilidade.
+
+Análise de impacto:
+
+Quais sistemas usam autenticação própria?
+
+Como os acessos são controlados hoje (VPN, plataforma Dadosfera, pipelines)?
+
+Há sistemas legados que não suportam SSO?
+
+📌 Marcos:
+Escolha e contratação da plataforma de identidade (Azure AD, Okta, JumpCloud…);
+Mapeamento de sistemas e permissões existentes;
+Integração com SSO (via SAML, OIDC, LDAP);
+Provisionamento automático de usuários (onboarding/offboarding);
+Migração gradual dos acessos;
+Desativação de sistemas legados de autenticação;
+
+🛠️ 2. Execução Técnica em Etapas
+
+Etapa	        Ação	                                                Ferramentas
+Setup	        Instalar, configurar e validar o diretório	            Terraform, CLI da IDP
+Integração	    Conectar Metabase, VPN, Dadosfera via SSO	            SAML/OIDC config
+Testes	        Criar ambiente de:                                      Ambientes isolados, usuários fake
+                QA para login, roles, provisionamento
+Automação	    Implementar ciclo de vida:                              SCIM, APIs de IDP
+                criação, alteração e remoção de usuários
+Monitoramento	Habilitar logs e alertas de autenticação	            SIEM, Alertas IDP
+
+
+💡 3. Impacto no Caso Anterior (banco + VPN + pipeline)
+Elemento do case	        Impacto
+VPN com OpenVPN	            Autenticação via SSO, elimina gestão manual de credenciais
+Banco de teste	            Acesso ao banco pode ser controlado por grupos de permissões no diretório
+Plataforma Dadosfera	    Login único (SSO), onboarding automático de analistas, revogação instantânea ao offboarding
+Pipeline TB_seu_nome_vaga	Permissões definidas por função — ex: dados sensíveis só pra quem é do grupo “RH”
+
+
+🤝 4. Comunicação e Interação com os Clientes
+🎯 Objetivo: Evitar fricção, garantir adoção e preparar tecnicamente
+📆 Cronograma de Comunicação
+
+Quando	        Ação	                                    Canal
+T-30 dias	    Anúncio do upgrade, benefícios e datas	    Email + webinar
+T-20 dias	    Guia de integração com novo SSO	            Help Center, PDF
+T-10 dias	    Abertura para testes em sandbox	            Painel do cliente
+T-5 dias	    Sessão de dúvidas ao vivo com time técnico	Zoom/Teams
+T-0 (Go Live)	Lançamento e suporte dedicado	            Slack, email, telefone
+T+7 dias	    Coleta de feedback	                        Survey + CS call
+

@@ -1,0 +1,23 @@
+CREATE TABLE IF NOT EXISTS public.tb_yuri_rodrigues_suporte
+(
+    "Age" integer,
+    "BusinessTravel" character varying(55) COLLATE pg_catalog."default",
+    "Department" character varying(55) COLLATE pg_catalog."default",
+    "DistanceFromHome" integer,
+    "Education" integer,
+    "EducationField" character varying(55) COLLATE pg_catalog."default",
+    "EmployeeCount" integer,
+    "EmployeeNumber" integer,
+    "Gender" character varying(10) COLLATE pg_catalog."default",
+    "JobLevel" integer,
+    "JobRole" character varying(55) COLLATE pg_catalog."default",
+    "MaritalStatus" character varying(10) COLLATE pg_catalog."default",
+    "NumCompaniesWorked" integer,
+    "Over18" "char",
+    "OverTime" character varying(3) COLLATE pg_catalog."default",
+    "TotalWorkingYears" integer,
+    "YearsAtCompany" integer,
+    "YearsInCurrentRole" integer,
+    "YearsSinceLastPromotion" integer,
+    "YearsWithCurrManager" integer
+);

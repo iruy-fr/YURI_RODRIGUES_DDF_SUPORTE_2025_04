@@ -1,11 +1,12 @@
 Boa tarde, tudo bem?
 Recebi a sua solicitação, estamos analisando qual o motivo do seu erro, logo retornaremos com uma resposta.
 
-Verifiquei que no seu arquivo existem erros nas tabelas 'perfomanceRating',
+Verifiquei dois problemas no seu Dataset.
+1ª - Seu dataset não tem as permissões de autenticação da API do Google Planilhas. É necessário necessário dar permissão à Dadosfera ao seu usuário de conexão.
+2ª - Seu arquivo contém dados com erros na tabela 'perfomanceRating',
 na linha 202 na coluna 'PerformanceRating' onde a informação é nula.
 Também verifiquei que na linha 205 existe um erro na coluna 'EmployeeNumber' em que a informação contida não é numeral,
 o que está gerando erro na importação das informações para a Dadosfera.
 Para a correção da linha 202 sugiro que seja verificado o valor correspondente à 'PerformanceRating' do funcionário 274.
 Para a correção da linha 205 sugiro que seja adicionado o valor 281 pois é o único funcionário dentro do intervalo que não está na tabela 'performanceRating'.
-Qualquer outra dúvida ou erro pode entrar em contato que iremos verificar.
-Alguma outra dúvida?
+Se surgir outro erro ou se estiver com dificuldades para fazer a integração ainda entre em contato que iremos verificar.

@@ -21,3 +21,4 @@
 ## [Step7](https://github.com/iruy-fr/YURI_RODRIGUES_DDF_SUPORTE_2025_04/tree/main/step7)
 - [processos_internos.txt](https://github.com/iruy-fr/YURI_RODRIGUES_DDF_SUPORTE_2025_04/blob/main/step7/processos_internos.txt)
 - [promptdechatgpt.png](https://github.com/iruy-fr/YURI_RODRIGUES_DDF_SUPORTE_2025_04/blob/main/step7/promptdechatgpt.png)
+## [Vídeo de Apresentação](https://youtube.com/shorts/9orgvzml20A?si=K5M8dBSOR2YG8q60)

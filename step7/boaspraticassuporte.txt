@@ -1,0 +1,25 @@
+🔧 Etapas da implementação:
+
+1. Integração Técnica:
+Utilizar uma IA conversacional como o ChatGPT ou Bard com API.
+Integrar com o backend da Dadosfera e com a base de dados de documentação (docs.dadosfera.ai).
+Autenticar via SSO para personalizar respostas com base no perfil do usuário.
+
+2. Estruturação da Jornada de Atendimento:
+
+Perguntas frequentes
+Orientações técnicas (instalação de VPN, conexão de dados, etc.)
+Sugestão de tutoriais/documentos
+Escalonamento humano se a IA não resolver
+
+3. Aprendizado Contínuo:
+Feedback direto do usuário (👍 ou 👎)
+Treinamento com base em casos resolvidos
+Revisão mensal com equipe de suporte
+
+🔄 2) Fluxo do processo de atendimento com IA
+Usuário inicia atendimento via chatbot.
+IA tenta entender e resolver com base na base de conhecimento.
+Se necessário, a IA redireciona para a documentação (docs.dadosfera.ai).
+Caso a dúvida persista, a IA escala para o Suporte Humano da Dadosfera.
+O humano resolve e a IA aprende com o caso.
